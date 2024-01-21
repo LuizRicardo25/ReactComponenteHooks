@@ -1,3 +1,80 @@
+
+# Projeto: Componente React Usando Função (Hook)
+
+## Introdução
+
+Bem-vindos ao projeto de React onde exploraremos a criação de componentes usando a abordagem de função com Hooks. Esta metodologia moderna do React simplifica a criação de componentes, permitindo um código mais limpo e conciso, especialmente ao lidar com estados e efeitos colaterais.
+
+## Objetivo
+
+O objetivo deste projeto é desenvolver um componente chamado `MeuComponenteFuncional`, que irá demonstrar os fundamentos do uso de funções e Hooks em React. Este componente exemplificará como gerenciar estados e aplicar efeitos sem a necessidade de classes.
+
+## Desenvolvimento do Componente
+
+### Passo 1: Preparação do Ambiente
+
+Certifique-se de que o ambiente React esteja configurado. Se ainda não tiver configurado, pode iniciar um novo projeto React:
+
+```bash
+npx create-react-app meu-app-funcional
+cd meu-app-funcional
+
+
+Passo 2: Criação do Componente MeuComponenteFuncional
+2.1. Criando o Arquivo do Componente
+Crie um arquivo chamado MeuComponenteFuncional.js na pasta src do seu projeto React.
+
+2.2. Escrevendo o Código do Componente
+No arquivo MeuComponenteFuncional.js, implemente o seguinte código:
+
+import React, { useState, useEffect } from 'react';
+
+function MeuComponenteFuncional() {
+  const [mensagem, setMensagem] = useState('Olá, este é o meu componente funcional!');
+
+  useEffect(() => {
+    // Aqui você pode adicionar qualquer efeito colateral que o componente deva executar
+    document.title = mensagem;
+  });
+
+  return (
+    <div>
+      {mensagem}
+    </div>
+  );
+}
+
+export default MeuComponenteFuncional;
+
+Passo 3: Uso do Componente no App
+Agora, vamos integrar o MeuComponenteFuncional no aplicativo principal.
+
+3.1. Importando o Componente no App.js
+No arquivo App.js, importe e utilize o MeuComponenteFuncional:
+
+import React from 'react';
+import MeuComponenteFuncional from './MeuComponenteFuncional';
+
+function App() {
+  return (
+    <div>
+      <MeuComponenteFuncional />
+    </div>
+  );
+}
+
+export default App;
+
+Passo 4: Execução e Visualização
+Para ver o componente em ação, execute o aplicativo:
+
+npm start
+
+Conclusão
+Parabéns! Você acaba de criar um componente funcional em React utilizando Hooks. Esta abordagem moderna oferece uma maneira eficiente e elegante de construir componentes interativos no React. Continue explorando os Hooks e suas capacidades para aprimorar ainda mais suas habilidades em desenvolvimento React.
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
