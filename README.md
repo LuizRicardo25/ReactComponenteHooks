@@ -18,7 +18,7 @@ Certifique-se de que o ambiente React esteja configurado. Se ainda não tiver co
 ```bash
 npx create-react-app meu-app-funcional
 cd meu-app-funcional
-
+```
 
 Passo 2: Criação do Componente MeuComponenteFuncional
 2.1. Criando o Arquivo do Componente
@@ -26,7 +26,7 @@ Crie um arquivo chamado MeuComponenteFuncional.js na pasta src do seu projeto Re
 
 2.2. Escrevendo o Código do Componente
 No arquivo MeuComponenteFuncional.js, implemente o seguinte código:
-
+```bash
 import React, { useState, useEffect } from 'react';
 
 function MeuComponenteFuncional() {
@@ -45,13 +45,13 @@ function MeuComponenteFuncional() {
 }
 
 export default MeuComponenteFuncional;
-
+```
 Passo 3: Uso do Componente no App
 Agora, vamos integrar o MeuComponenteFuncional no aplicativo principal.
 
 3.1. Importando o Componente no App.js
 No arquivo App.js, importe e utilize o MeuComponenteFuncional:
-
+```bash
 import React from 'react';
 import MeuComponenteFuncional from './MeuComponenteFuncional';
 
@@ -64,14 +64,14 @@ function App() {
 }
 
 export default App;
-
+```
 Passo 4: Execução e Visualização
 Para ver o componente em ação, execute o aplicativo:
 
 npm start
 
-Conclusão
-Parabéns! Você acaba de criar um componente funcional em React utilizando Hooks. Esta abordagem moderna oferece uma maneira eficiente e elegante de construir componentes interativos no React. Continue explorando os Hooks e suas capacidades para aprimorar ainda mais suas habilidades em desenvolvimento React. 
+##Conclusão
+###Parabéns! Você acaba de criar um componente funcional em React utilizando Hooks. Esta abordagem moderna oferece uma maneira eficiente e elegante de construir componentes interativos no React. Continue explorando os Hooks e suas capacidades para aprimorar ainda mais suas habilidades em desenvolvimento React. 
 
 
 
